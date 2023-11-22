@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(212, 45%, 89%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qrForm {
+    margin-block: 100px;
+    /* padding: 100px; */
+    height: 340px; 
+    width: 220px;
+    border: 1px solid white;
+    background-color: hsl(0, 0%, 100%);
+    /* display: grid; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    border-radius: 20px;
+}
+
+img {
+    border-radius: 10px;
+    margin-inline: 10px;
+    margin-block: 10px;
+    height: 200px;
+    width: 200px;
+}
+
+h1 {
+    margin-top: 6px;
+    margin-bottom: 10px;
+    margin-inline: 30px;
+    padding-block: 2px;
+    font-size: 14px;
+    color: hsl(218, 44%, 22%);
+    font-weight: 700;
+}
+
+p {
+    font-weight: 400;
+    margin-inline: 30px;
+    font-size: 10px;
+    color: hsl(220, 15%, 55%);
+}
+
+
+/* Media query for smaller screens like mobile phones (375px) */
+@media screen and (max-width: 375px) {
+    .qrForm {
+        margin: 20px; /* Adjust margin for smaller screens */
+        height: 240px; /* Modify height */
+        width: 140px; /* Modify width */
+    }
+
+    img {
+        height: 120px; /* Adjust image size */
+        width: 120px; /* Adjust image size */
+    }
+
+    h1 {
+        margin-inline: 10px; /* Adjust margin */
+        font-size: 10px; /* Adjust font size */
+    }
+
+    p {
+        margin-inline: 10px; /* Adjust margin */
+        font-size: 6px; /* Adjust font size */
+    }
+}
+
+/* Media query for larger screens like desktops (1440px) */
+@media screen and (min-width: 1440px) {
+    .qrForm {
+        margin-block: 100px; /* Adjust margin for larger screens */
+        height: 400px; /* Modify height */
+        width: 260px; /* Modify width */
+    }
+
+    img {
+        height: 250px; /* Adjust image size */
+        width: 250px; /* Adjust image size */
+    }
+
+    h1 {
+        margin-inline: 50px; /* Adjust margin */
+        font-size: 16px; /* Adjust font size */
+    }
+
+    p {
+        margin-inline: 50px; /* Adjust margin */
+        font-size: 12px; /* Adjust font size */
+    }
+}
